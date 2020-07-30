@@ -1,9 +1,9 @@
-## Docker开发环境
-[详细文档](Docker.md)
+## Docker Develop Environment
+[Detail Document](Docker.md)
 
-## Demo
+## Quick Start
 ```$xslt
-$ cp .env.example .env //修改配置
+$ cp .env.example .env //then mofidy your .env
 
 $ composer install --ignore-platform-reqs
 
