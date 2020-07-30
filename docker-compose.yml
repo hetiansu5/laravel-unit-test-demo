@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  taobaoke.test:
+    image: tinson/debian8.4-nginx-php7.3
+    expose:
+      - 80
+    volumes:
+      - ".:/www/unit.test"
+    restart: always
+    environment:
+      VIRTUAL_HOST: demo.jq-docker.com
+    container_name: unit.test
+    entrypoint: "/www/unit.test/assets/entrypoint.sh"
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
