@@ -4,8 +4,7 @@ use Laravel\Lumen\Testing\DatabaseMigrations;
 use Laravel\Lumen\Testing\DatabaseTransactions;
 
 /**
- * Lumen 5.5 DatabaseTransaction中已经有以下代码
- * 当前版本的Lumen DatabaseTransaction只支持单数据库
+ * 支持多库事务回滚
  * Trait MultipleDatabaseTransactions
  */
 trait PrepareTestCase
